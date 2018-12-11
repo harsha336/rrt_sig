@@ -11,7 +11,7 @@ export LIBS64 = -lsigkin64 -lsigogl64 -lsigos64 -lsig64 -lglfw -lX11 -lGL
 
 # names of the modules to be compiled:
 
-target = libsig64 libsigogl64 libsigos64 libsigkin64 gstests64 shapes64 exmotionplayer exmovegraph fabrik project2 skelviewer gear project3 modelviewer
+target = libsig64 libsigogl64 libsigos64 libsigkin64 gstests64 shapes64 exmotionplayer exmovegraph fabrik project2 skelviewer gear modelviewer project3
 DIRS = $(target)
 
 # to be included later: libsigogl64

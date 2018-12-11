@@ -11,15 +11,19 @@ main.o: ../../examples/project3/src/main.cpp \
  ../../include/sig/sn_group.h ../../include/sig/gs_array.h \
  ../../include/sig/sn_lines2.h ../../include/sig/gs_rect.h \
  ../../include/sig/sn_polygons.h ../../include/sig/gs_polygons.h \
- ../../include/sig/gs_polygon.h ../../include/sigogl/ui_button.h \
+ ../../include/sig/gs_polygon.h ../../include/sig/sn_primitive.h \
+ ../../include/sig/sn_model.h ../../include/sig/gs_model.h \
+ ../../include/sig/gs_quat.h ../../include/sig/gs_string.h \
+ ../../include/sig/gs_strings.h ../../include/sig/gs_primitive.h \
+ ../../include/sig/sn_material.h ../../include/sigogl/ui_button.h \
  ../../include/sigogl/ui_element.h ../../include/sig/gs_font.h \
  ../../include/sigogl/ui_label.h ../../include/sigogl/ui_style.h \
  ../../include/sigogl/ws_viewer.h ../../include/sigogl/ws_window.h \
- ../../include/sigogl/ui_manager.h ../../include/sig/gs_string.h \
- ../../include/sigogl/ui_panel.h ../../include/sig/sn_text.h \
- ../../include/sig/sn_planar_objects.h ../../include/sigogl/gl_renderer.h \
- ../../include/sig/sa_action.h ../../include/sigogl/gl_context.h \
- ../../include/sig/gs_light.h ../../include/sigogl/gl_types.h \
- ../../include/sigogl/gl_program.h ../../include/sig/gs_quat.h \
+ ../../include/sigogl/ui_manager.h ../../include/sigogl/ui_panel.h \
+ ../../include/sig/sn_text.h ../../include/sig/sn_planar_objects.h \
+ ../../include/sigogl/gl_renderer.h ../../include/sig/sa_action.h \
+ ../../include/sigogl/gl_context.h ../../include/sig/gs_light.h \
+ ../../include/sigogl/gl_types.h ../../include/sigogl/gl_program.h \
  ../../include/sig/gs_camera.h ../../examples/project3/src/rrt.h \
- ../../examples/project3/src/walls.h ../../include/sigogl/ws_run.h
+ ../../include/sig/sn_lines.h ../../examples/project3/src/walls.h \
+ ../../include/sigogl/ws_run.h

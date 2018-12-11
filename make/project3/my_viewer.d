@@ -15,17 +15,17 @@ my_viewer.o: ../../examples/project3/src/my_viewer.cpp \
  ../../include/sig/sn_model.h ../../include/sig/gs_model.h \
  ../../include/sig/gs_quat.h ../../include/sig/gs_string.h \
  ../../include/sig/gs_strings.h ../../include/sig/gs_primitive.h \
- ../../include/sigogl/ui_button.h ../../include/sigogl/ui_element.h \
- ../../include/sig/gs_font.h ../../include/sigogl/ui_label.h \
- ../../include/sigogl/ui_style.h ../../include/sigogl/ws_viewer.h \
- ../../include/sigogl/ws_window.h ../../include/sigogl/ui_manager.h \
- ../../include/sigogl/ui_panel.h ../../include/sig/sn_text.h \
- ../../include/sig/sn_planar_objects.h ../../include/sigogl/gl_renderer.h \
- ../../include/sig/sa_action.h ../../include/sigogl/gl_context.h \
- ../../include/sig/gs_light.h ../../include/sigogl/gl_types.h \
- ../../include/sigogl/gl_program.h ../../include/sig/gs_camera.h \
- ../../examples/project3/src/rrt.h ../../include/sig/sn_lines.h \
- ../../examples/project3/src/walls.h \
+ ../../include/sig/sn_material.h ../../include/sigogl/ui_button.h \
+ ../../include/sigogl/ui_element.h ../../include/sig/gs_font.h \
+ ../../include/sigogl/ui_label.h ../../include/sigogl/ui_style.h \
+ ../../include/sigogl/ws_viewer.h ../../include/sigogl/ws_window.h \
+ ../../include/sigogl/ui_manager.h ../../include/sigogl/ui_panel.h \
+ ../../include/sig/sn_text.h ../../include/sig/sn_planar_objects.h \
+ ../../include/sigogl/gl_renderer.h ../../include/sig/sa_action.h \
+ ../../include/sigogl/gl_context.h ../../include/sig/gs_light.h \
+ ../../include/sigogl/gl_types.h ../../include/sigogl/gl_program.h \
+ ../../include/sig/gs_camera.h ../../examples/project3/src/rrt.h \
+ ../../include/sig/sn_lines.h ../../examples/project3/src/walls.h \
  ../../include/sigogl/ui_radio_button.h \
  ../../include/sigogl/ui_check_button.h ../../include/sig/sn_transform.h \
  ../../include/sig/sn_manipulator.h ../../include/sig/gs_plane.h \

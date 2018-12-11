@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <thread>
 #include <chrono>
-#include <math.h>
 
 #include <sig/gs_vec.h>
 #include <sig/gs_input.h>
 #include <sig/sn_lines.h>
 #include <sig/gs_output.h>
-#include <sig/gs_mat.h>
 
 #include "walls.h"
 
@@ -16,16 +14,6 @@ struct Node
 	std::vector <Node*> children;
 	Node *parent;
 	pnt p;
-};
-
-struct Robot
-{
-	float m;
-	GsVec pos;
-	GsVec vel;
-	GsVec steer_dir;
-	float max_force;
-	float max_speed;
 };
 
 class RRTGraph
@@ -37,19 +25,12 @@ class RRTGraph
 	float reach_thresh_;
 	float win_height_, win_width_;
 	Node *root_, *last_node_;
-	Robot *robo_;
 	std::vector <Node*> nodes_;
 	std::vector <Node*> path_;
-	float slowing_distance = 2.0f;
-	GsMat *position_;
-	bool path_computed_;
-	bool new_goal_;
     public:
-     	enum obj_type{ ROBOT, WALL, GOAL };
+     	enum obj_type{ ROBOT, WALL };
 	RRTGraph();
-	void init(GsPnt2 start, float rt, float win_w, float win_h, GsMat* pos);
-	void setGoal(GsVec a){goal_ = pnt(a.x, a.y); new_goal_ = true;}
-	GsVec getPosition(){ return robo_->pos; }
+	void init(GsPnt2 start, GsPnt2 goal, float rt, float win_w, float win_h);
 	Node* getRandomNode();
 	Node* nearestPoint(pnt p);
 	pnt findConfig(Node *c, Node *c_near);
@@ -63,11 +44,4 @@ class RRTGraph
 	}
 	std::vector<pnt> getNodePoints();
 	std::vector<pnt> getPathPoints();
-	void eulerIntegration();
-	GsVec truncate(GsVec v, float t);
-	void steering(GsVec g);
-	float magnitude(GsVec v)
-	{
-		return(sqrtf(v.x*v.x + v.y*v.y + v.z*v.z));
-	}
 };
